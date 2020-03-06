@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="SARI.css" rel="stylesheet" type="text/css" />
+  <script src="jquery-3.4.1.min.js"></script>
+  <title>SARI记忆录</title>
+</head>
+<body>
+  <div class="header">
+    <div class="center">
+        <p>武汉,加油</p>
+    </div>
+  </div>
+  <div class="nav_box">
+    
+      <div class="nav1"><h2>SARI记忆录</h2></div>
+      <nav class="nav2">
+        <ul class="nav_list">
+          <li><a href="javascript:void(0)" id="virus_main">疫情概况</a></li>
+          <li><a href="javascript:void(0)">图示
+          <div class="carect"></div></a>
+            <ul id="pull_list">
+              <li><a href="javascript:void(0)" id="distribute_img">分布图</a></li>
+              <li><a href="javascript:void(0)" id="trend_img">趋势图</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" id="province_case">各省疫情</a></li>  
+          <li><a href="javascript:void(0)" id="nation_case">各国疫情</a></li>  
+          <li><a href="javascript:void(0)" id="news_content">新闻内容</a></li></li>
+          <li><a href="javascript:void(0)" id="about">关于</a></li></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </div>
+  
+  <div class="content">
+    <div class="virus_main_box" id="virus_main_box">
+      <div class="center">
+        <br><br><h2>疫情概况</h2><br>
+        <div id="virus_main_get"></div>
+      </div>
+    </div>
+
+    <div class="distribute_img_box" id="distribute_img_box">    
+      <br><br><h2 style="text-align: center;">分布图</h2><br>
+      <img src="" id="distribute_img_content">
+    </div>
+
+    <div class="trend_img_box" id="trend_img_box">
+      <img src="" id="trend_img_content">
+    </div>
+
+    <div class="province_case_box" id="province_case_box">
+      <div id="province_list"></div>
+    </div>
+
+    <div class="nation_case_box" id="nation_case_box">
+      <div id="nation_list"></div>
+    </div>
+
+    <div class="news_content_box" id="news_content_box">
+      <div id="news_list"></div>
+    </div>
+
+   
+  </div>
+
+  <div class="shade" id="shade">
+    <div class="win">
+      <div class="win_top">
+        <span onclick="win_off()">X</span>
+      </div>
+      <div id="children_content"></div>
+    </div>
+  </div>
+
+  <script src="SARI.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+/*公用*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input {
+  margin:0;
+  padding:0;
+  -webkit-font-smoothing: antialiased;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width:70vw;
+}
+/*顶部栏*/
+.header {
+  height:6vh;
+  line-height: 6vh;
+  background-color: #f7f7f7;
+}
+/*导航栏*/
+ul {
+  list-style: none;
+}
+.nav_box {
+  height:7vh;
+  background-color:#333333;
+  margin:0 auto;
+}
+.nav1 {
+  color:#9D9D9D;
+  line-height: 7vh;
+  float:left;
+  margin-left: 6vw;
+}
+.nav2 {
+  float:right;
+  margin-right: 6vw;
+}
+ul li {
+  float:left;
+  line-height: 7vh;
+  text-align: center;
+  position: relative;
+}
+ul a {
+  display:block;
+  text-align: center;
+  text-decoration: none;
+  width:6vw;
+  color:#9D9D9D;
+}
+#pull_list {
+  z-index: 3;
+}
+ul a:hover {
+  background-color: black;
+  color:rgb(245, 255, 250);
+}
+ul li ul li {
+  float:none;
+  background-color:#333333 ;
+}
+ul li ul {
+  width:6vw;
+  position: absolute;
+  display:none;
+}
+ul li:hover ul{
+  display:block;
+}
+/*箭头*/
+.carect { 
+  position: relative; 
+  width: 0; 
+  height: 0;
+  margin-left: 5px; 
+  margin-bottom: 2px; 
+  border-top: 6px solid; 
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent; 
+  border-radius: 10px; 
+  display: inline-block; 
+}
+.menu { 
+  display: none; 
+  background:#333333; 
+  cursor: pointer; 
+}
+@media (max-width: 1200px) {
+  /*汉堡菜单*/
+ /* *{
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+  }*/
+  .menu { 
+  display: block; 
+  float: right; 
+  padding: 8px 5px; 
+  position: relative; 
+  border: 1px solid #333333; 
+  border-radius: 5px; 
+  margin-right: 12px; 
+  margin-top: 3px;
+  }
+  .menu span { 
+  height: 2px; 
+  width: 25px; 
+  display: block; 
+  background: #CCC; 
+  border-radius: 10px; 
+  }
+  .menu span + span { 
+  margin-top: 6px;
+  }
+}
+@media (max-width: 1200px) {
+  .nav_list { 
+  position: fixed; 
+  height: 100%; 
+  top: 0; 
+  left:-45%;
+  padding-top: 10px; 
+  width: 45%; 
+  background-color: #333333; 
+  transition: 1s; 
+  z-index: 999;
+  }
+  .nav_list li {
+    width: 100%; 
+    margin: 0; 
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  .nav_list li > a {
+    width: 100%; 
+    border-radius: 0; 
+    margin: 0;
+  }
+  #pull_list {
+    position: relative; 
+    width: 100%; 
+    text-align: center; 
+    border-radius: 0;  
+    box-shadow: 0 -1px 7px #ccc inset;
+  }
+}
+nav .open{
+  left:0;
+  overflow: auto;
+}
+/*背景图*/
+.content {
+  position: fixed;
+  top:13vh;
+  background-image: url("SARI_1.jpeg");
+  height:90vh;
+  width:100vw;
+}
+/*病毒概况图*/
+.virus_main_box {
+  position: relative;
+  display:block;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  top:3vh;
+  overflow-y:auto;
+  width:90vw;
+  height:80vh;
+  border:1px solid rgb(43, 43, 53);
+  border-radius: 10px;
+}
+.virus_main_box span {
+  color: rgb(47, 161, 228);
+}
+/*分布图*/
+.distribute_img_box {
+  display:none;
+  position:relative;
+  top:2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width:90vw;
+  height:80vh;
+  background-color: white;
+  border-radius: 10px;
+  overflow-y:auto;
+}
+#distribute_img_content {
+  width:100%;
+  height:auto;
+}
+/*趋势图*/
+.trend_img_box {
+  display:none;
+  position: relative;
+  top:2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width:90vw;
+  height:80vh;
+  background-color: white;
+  overflow-y:auto;
+  border-radius: 10px;
+}
+#trend_img_content {
+  width:100%;
+  height: auto;
+}
+/*各省疫情*/
+.province_case_box {
+  display:none;
+  position: relative;
+  top:2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width:90vw;
+  height:80vh;
+  background-color: white;
+  overflow-y:auto;
+  border-radius: 10px;
+}
+.font-center {
+  text-align: center;
+}
+/*各国疫情*/
+.nation_case_box {
+  display:none;
+  position: relative;
+  top:2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width:90vw;
+  height:80vh;
+  background-color: white;
+  overflow-y:auto;
+  border-radius: 10px;
+}
+/*新闻页*/
+.news_content_box {
+  display:none;
+  position: relative;
+  top:2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width:90vw;
+  height:80vh;
+  background-color: white;
+  overflow-y:auto;
+  overflow-x: scroll;
+  border-radius: 10px;
+}
+/*弹窗*/
+.shade {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background:rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  
+}
+.win {
+  background:#eeeeee;
+	width: 90vw;
+	z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  overflow-y:auto;
+  height:80vh;
+}
+.win_top {
+  height:3vh;
+}
+.shade span {
+  color: rgb(248, 6, 6);
+	float: right;
+	cursor: pointer;
+  font-size: larger;
+  margin-right: 1vw;
+}
+/*表格*/
+.showtable {
+  margin-left: auto;
+  margin-right: auto;
+}
+.middle {
+  margin-left: auto;
+  margin-right: auto;
+  width:60vw;
+  height:30vh;
+  margin-top: 5vh;
+}
+.btbg1 {
+  background-color: #f3b6ee;
+}
+.btbg2 {
+  background-color: rgb(212, 150, 169);
+}
+.btbg3 {
+  background-color: rgb(177, 157, 157);
+}
+.btbg4 {
+  background-color: rgb(161, 228, 172);
+} 
+.btbg5 {
+  background-color: rgb(124, 189, 241);
+}
+.table_btn {
+  border:none;
+  cursor: pointer;
+  background-color: rgb(24, 141, 250);
+  color:white;
+  width:60px;
+  height:4vh;
+}
+.table_btn:hover {
+  background-color: rgb(24, 123, 189);
+}
+/*关于页*/
+#profession_img {
+  width:100%;
+  height: auto;
+}
+.about_box {
+  margin-left: auto;
+  margin-right: auto;
+  width:80vw;
+  margin-bottom: 4vh;
+}
+/*字体适配*/
+@media screen and (max-width:1200px) and (min-width:800px) {
+  html {
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+@media screen and (max-width:800px) and (min-width:600px) {
+  html {
+    font-size: 14.4px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+@media screen and (max-width:600px)  {
+  html {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
